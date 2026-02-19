@@ -20,6 +20,11 @@ export default function SegurancaTecnologia() {
         "Novas falhas em serviços gerenciados de nuvem com impacto global",
         "Explorações de privilege escalation em sistemas operacionais modernos",
       ],
+      refs: [
+        { label: "NVD (NIST)", url: "https://nvd.nist.gov/" },
+        { label: "CVE (MITRE)", url: "https://cve.mitre.org/" },
+        { label: "CISA KEV", url: "https://www.cisa.gov/known-exploited-vulnerabilities-catalog" },
+      ],
     },
     {
       titulo: "Ameaças emergentes",
@@ -27,6 +32,11 @@ export default function SegurancaTecnologia() {
         "Campanhas de phishing com uso de IA e deepfakes",
         "Ataques a MFA por push fatigue e token theft",
         "Golpes de engenharia social com automação generativa",
+      ],
+      refs: [
+        { label: "CISA Alerts", url: "https://www.cisa.gov/news-events/alerts" },
+        { label: "Microsoft Security Blog", url: "https://www.microsoft.com/security/blog/" },
+        { label: "Cisco Talos Blog", url: "https://blog.talosintelligence.com/" },
       ],
     },
     {
@@ -36,6 +46,11 @@ export default function SegurancaTecnologia() {
         "Credenciais vazadas em repositórios e pacotes de terceiros",
         "Incidentes decorrentes de integrações SaaS sem governança",
       ],
+      refs: [
+        { label: "Krebs on Security", url: "https://krebsonsecurity.com/" },
+        { label: "BleepingComputer", url: "https://www.bleepingcomputer.com/" },
+        { label: "Troy Hunt (HIBP Blog)", url: "https://www.troyhunt.com/" },
+      ],
     },
     {
       titulo: "Novas tecnologias",
@@ -43,6 +58,11 @@ export default function SegurancaTecnologia() {
         "Controles de Zero Trust integrados a plataformas de identidade",
         "Sistemas de detecção baseados em comportamento e IA",
         "Ferramentas de SBOM e verificação de integridade de builds",
+      ],
+      refs: [
+        { label: "NIST SP 800-207 (Zero Trust)", url: "https://csrc.nist.gov/publications/detail/sp/800-207/final" },
+        { label: "OWASP SAMM", url: "https://owaspsamm.org/" },
+        { label: "CycloneDX (SBOM)", url: "https://cyclonedx.org/" },
       ],
     },
   ];
@@ -55,6 +75,11 @@ export default function SegurancaTecnologia() {
         "Gestão de riscos, ameaça, vulnerabilidade e probabilidade",
         "Criptografia, hashing, assinatura digital e PKI",
       ],
+      refs: [
+        { label: "NIST Glossary", url: "https://csrc.nist.gov/glossary" },
+        { label: "SANS Whitepapers", url: "https://www.sans.org/white-papers/" },
+        { label: "OWASP Cheat Sheets", url: "https://cheatsheetseries.owasp.org/" },
+      ],
     },
     {
       titulo: "Boas práticas",
@@ -62,6 +87,11 @@ export default function SegurancaTecnologia() {
         "Políticas de senha, MFA e gestão de identidades",
         "Princípio do menor privilégio e segregação de funções",
         "Backup 3-2-1, testes de restauração e plano de resposta a incidentes",
+      ],
+      refs: [
+        { label: "CIS Controls", url: "https://www.cisecurity.org/controls" },
+        { label: "NIST Cybersecurity Framework", url: "https://www.nist.gov/cyberframework" },
+        { label: "OWASP Top 10", url: "https://owasp.org/www-project-top-ten/" },
       ],
     },
     {
@@ -71,6 +101,11 @@ export default function SegurancaTecnologia() {
         "Guia de segurança para desenvolvedores: validação, autenticação e logs",
         "Passo a passo para inventário de ativos e avaliação de risco",
       ],
+      refs: [
+        { label: "OWASP ASVS", url: "https://owasp.org/ASVS/" },
+        { label: "Microsoft Learn Security", url: "https://learn.microsoft.com/security/" },
+        { label: "Google Cloud Security", url: "https://cloud.google.com/security" },
+      ],
     },
     {
       titulo: "Frameworks e padrões",
@@ -78,6 +113,11 @@ export default function SegurancaTecnologia() {
         "NIST CSF, ISO/IEC 27001, CIS Controls",
         "OWASP ASVS, Top 10 e SAMM",
         "MITRE ATT&CK para mapeamento de táticas e técnicas",
+      ],
+      refs: [
+        { label: "NIST CSF", url: "https://www.nist.gov/cyberframework" },
+        { label: "ISO/IEC 27001 (Overview)", url: "https://www.iso.org/isoiec-27001-information-security.html" },
+        { label: "MITRE ATT&CK", url: "https://attack.mitre.org/" },
       ],
     },
   ];
@@ -90,6 +130,11 @@ export default function SegurancaTecnologia() {
         "Microsegmentação e políticas dinâmicas",
         "Telemetria e avaliação de postura de dispositivos",
       ],
+      refs: [
+        { label: "NIST SP 800-207", url: "https://csrc.nist.gov/publications/detail/sp/800-207/final" },
+        { label: "Microsoft Zero Trust", url: "https://www.microsoft.com/security/business/zero-trust" },
+        { label: "Google BeyondCorp", url: "https://cloud.google.com/beyondcorp" },
+      ],
     },
     {
       titulo: "Cloud Security",
@@ -97,6 +142,11 @@ export default function SegurancaTecnologia() {
         "CSPM, CWPP e CNAPP para visibilidade e proteção",
         "Segurança em pipelines e imagens de contêiner",
         "Gestão de chaves, segredos e acesso federado",
+      ],
+      refs: [
+        { label: "CIS Benchmarks", url: "https://www.cisecurity.org/cis-benchmarks" },
+        { label: "Cloud Security Alliance", url: "https://cloudsecurityalliance.org/" },
+        { label: "CNCF TAG Security", url: "https://tag-security.cncf.io/" },
       ],
     },
     {
@@ -106,6 +156,11 @@ export default function SegurancaTecnologia() {
         "Análise de ameaças e priorização de alertas",
         "Automação de playbooks e SOAR",
       ],
+      refs: [
+        { label: "NIST AI RMF", url: "https://www.nist.gov/ai/rmf" },
+        { label: "Google Secure AI Framework", url: "https://saf.google/" },
+        { label: "Microsoft AI Security", url: "https://learn.microsoft.com/azure/security/fundamentals/ai-security" },
+      ],
     },
     {
       titulo: "Threat Intelligence",
@@ -114,6 +169,11 @@ export default function SegurancaTecnologia() {
         "Hunters e mapeamento com ATT&CK",
         "Compartilhamento de inteligência entre equipes",
       ],
+      refs: [
+        { label: "MISP Project", url: "https://www.misp-project.org/" },
+        { label: "OASIS STIX/TAXII", url: "https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti" },
+        { label: "CISA Resources", url: "https://www.cisa.gov/resources-tools/services/free-cybersecurity-services-resources" },
+      ],
     },
     {
       titulo: "DevSecOps",
@@ -121,6 +181,11 @@ export default function SegurancaTecnologia() {
         "Shift-left com SAST, DAST e SCA",
         "SBOM, assinaturas e verificação de supply chain",
         "Políticas como código e gate de qualidade",
+      ],
+      refs: [
+        { label: "NIST SP 800-218 (SSDF)", url: "https://csrc.nist.gov/publications/detail/sp/800-218/final" },
+        { label: "SLSA Supply Chain", url: "https://slsa.dev/" },
+        { label: "OWASP SAMM", url: "https://owaspsamm.org/" },
       ],
     },
   ];
@@ -133,6 +198,11 @@ export default function SegurancaTecnologia() {
         "Plataformas de EDR/XDR integradas",
         "WAF, IDS/IPS e proteção de API",
       ],
+      refs: [
+        { label: "OWASP API Security", url: "https://owasp.org/www-project-api-security/" },
+        { label: "OWASP CRS (WAF)", url: "https://coreruleset.org/" },
+        { label: "Passkeys/MFA (FIDO)", url: "https://fidoalliance.org/" },
+      ],
     },
     {
       titulo: "Monitoramento",
@@ -140,6 +210,11 @@ export default function SegurancaTecnologia() {
         "SIEM com ingestão de logs e UEBA",
         "Observabilidade de aplicações e infraestrutura",
         "Dashboards de postura de segurança",
+      ],
+      refs: [
+        { label: "MITRE D3FEND", url: "https://d3fend.mitre.org/" },
+        { label: "OpenTelemetry", url: "https://opentelemetry.io/" },
+        { label: "Sigma Rules", url: "https://sigmahq.io/" },
       ],
     },
     {
@@ -149,6 +224,11 @@ export default function SegurancaTecnologia() {
         "Coletas de logs e pipelines de dados",
         "Ambientes de análise de malware e sandbox",
       ],
+      refs: [
+        { label: "OSQuery", url: "https://osquery.io/" },
+        { label: "Zeek", url: "https://zeek.org/" },
+        { label: "Suricata", url: "https://suricata.io/" },
+      ],
     },
     {
       titulo: "Labs e prática",
@@ -156,6 +236,11 @@ export default function SegurancaTecnologia() {
         "Ambientes vulneráveis controlados para estudo",
         "Desafios de pentest e CTFs",
         "Laboratórios de nuvem com créditos gratuitos",
+      ],
+      refs: [
+        { label: "TryHackMe", url: "https://tryhackme.com/" },
+        { label: "Hack The Box", url: "https://www.hackthebox.com/" },
+        { label: "OWASP Juice Shop", url: "https://owasp.org/www-project-juice-shop/" },
       ],
     },
   ];
@@ -168,6 +253,11 @@ export default function SegurancaTecnologia() {
         "Correção baseada em risco e impacto no negócio",
         "Acompanhamento de exploração ativa e PoCs",
       ],
+      refs: [
+        { label: "NVD (NIST)", url: "https://nvd.nist.gov/" },
+        { label: "CISA KEV", url: "https://www.cisa.gov/known-exploited-vulnerabilities-catalog" },
+        { label: "Exploit DB", url: "https://www.exploit-db.com/" },
+      ],
     },
     {
       titulo: "Alertas globais",
@@ -176,6 +266,11 @@ export default function SegurancaTecnologia() {
         "Boletins de vulnerabilidade em larga escala",
         "Campanhas ativas contra setores específicos",
       ],
+      refs: [
+        { label: "CISA Alerts", url: "https://www.cisa.gov/news-events/alerts" },
+        { label: "MSRC", url: "https://msrc.microsoft.com/" },
+        { label: "Google TAG", url: "https://blog.google/threat-analysis-group/" },
+      ],
     },
     {
       titulo: "Recomendações",
@@ -183,6 +278,11 @@ export default function SegurancaTecnologia() {
         "Mitigações temporárias e compensatórias",
         "Janela de manutenção e rollback plano",
         "Validação pós-correção e auditoria",
+      ],
+      refs: [
+        { label: "NIST SP 800-61 (CSIRT)", url: "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final" },
+        { label: "CISA Mitigations", url: "https://www.cisa.gov/resources-tools/resources" },
+        { label: "SANS Incident Handlers", url: "https://www.sans.org/cyber-security-courses/incident-handler/" },
       ],
     },
   ];
@@ -293,6 +393,18 @@ export default function SegurancaTecnologia() {
                     </li>
                   ))}
                 </ul>
+                {("refs" in g) && Array.isArray((g as any).refs) && (
+                  <div className="pt-3">
+                    <div className="text-xs uppercase text-muted-foreground mb-1">Referências</div>
+                    <div className="flex flex-wrap gap-2">
+                      {(g as any).refs.map((r: any, i: number) => (
+                        <a key={i} href={r.url} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">
+                          {r.label}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </Card>
             ))}
           </div>
@@ -315,6 +427,18 @@ export default function SegurancaTecnologia() {
                     </li>
                   ))}
                 </ul>
+                {("refs" in g) && Array.isArray((g as any).refs) && (
+                  <div className="pt-3">
+                    <div className="text-xs uppercase text-muted-foreground mb-1">Referências</div>
+                    <div className="flex flex-wrap gap-2">
+                      {(g as any).refs.map((r: any, i: number) => (
+                        <a key={i} href={r.url} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">
+                          {r.label}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </Card>
             ))}
           </div>
@@ -337,6 +461,18 @@ export default function SegurancaTecnologia() {
                     </li>
                   ))}
                 </ul>
+                {("refs" in g) && Array.isArray((g as any).refs) && (
+                  <div className="pt-3">
+                    <div className="text-xs uppercase text-muted-foreground mb-1">Referências</div>
+                    <div className="flex flex-wrap gap-2">
+                      {(g as any).refs.map((r: any, i: number) => (
+                        <a key={i} href={r.url} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">
+                          {r.label}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </Card>
             ))}
           </div>
@@ -359,6 +495,18 @@ export default function SegurancaTecnologia() {
                     </li>
                   ))}
                 </ul>
+                {("refs" in g) && Array.isArray((g as any).refs) && (
+                  <div className="pt-3">
+                    <div className="text-xs uppercase text-muted-foreground mb-1">Referências</div>
+                    <div className="flex flex-wrap gap-2">
+                      {(g as any).refs.map((r: any, i: number) => (
+                        <a key={i} href={r.url} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">
+                          {r.label}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </Card>
             ))}
           </div>
@@ -381,6 +529,18 @@ export default function SegurancaTecnologia() {
                     </li>
                   ))}
                 </ul>
+                {("refs" in g) && Array.isArray((g as any).refs) && (
+                  <div className="pt-3">
+                    <div className="text-xs uppercase text-muted-foreground mb-1">Referências</div>
+                    <div className="flex flex-wrap gap-2">
+                      {(g as any).refs.map((r: any, i: number) => (
+                        <a key={i} href={r.url} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">
+                          {r.label}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </Card>
             ))}
             <Card className="bg-slate-900/60 border-slate-700 p-6">
@@ -484,4 +644,3 @@ function TrendingIcon() {
 function ToolsIcon() {
   return <Cloud className="text-cyan-400" size={22} />;
 }
-
