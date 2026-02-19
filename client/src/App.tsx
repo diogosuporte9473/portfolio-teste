@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import SecurityTips from "./pages/SecurityTips";
 import SocialMediaSecurity from "./pages/SocialMediaSecurity";
+import SegurancaTecnologia from "./pages/SegurancaTecnologia";
 
 
 function Router() {
@@ -15,6 +16,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/dicas-seguranca"} component={SecurityTips} />
       <Route path={"/dicas-redes-sociais"} component={SocialMediaSecurity} />
+      <Route path={"/seguranca-tecnologia"} component={SegurancaTecnologia} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

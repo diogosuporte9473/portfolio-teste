@@ -2,6 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Mail, Linkedin, Shield, Award, Briefcase, Lock, Server, BarChart3, MessageCircle } from "lucide-react";
 import { useState } from "react";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
 
 /**
  * Tech Forward Design - Dark theme with cyan and purple accents
@@ -85,11 +91,34 @@ export default function Home() {
             DMS Security
           </div>
           <div className="flex items-center gap-4 md:gap-8 flex-wrap justify-end max-w-full overflow-x-auto">
-            <a href="#sobre" className="hover:text-blue-400 transition-colors text-sm md:text-base">Sobre</a>
-            <a href="#experiencia" className="hover:text-blue-400 transition-colors text-sm md:text-base">Experiência</a>
-            <a href="#certificacoes" className="hover:text-blue-400 transition-colors text-sm md:text-base">Formação</a>
-            <a href="/dicas-seguranca" className="hover:text-blue-400 transition-colors text-sm md:text-base">Dicas</a>
-            <a href="#contato" className="hover:text-blue-400 transition-colors text-sm md:text-base">Contato</a>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <a href="#sobre" className="hover:text-blue-400 transition-colors text-sm md:text-base cursor-pointer">
+                  Sobre
+                </a>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <a href="#experiencia">
+                  <DropdownMenuItem>Experiência</DropdownMenuItem>
+                </a>
+                <a href="#certificacoes">
+                  <DropdownMenuItem>Formação</DropdownMenuItem>
+                </a>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <a href="/seguranca-tecnologia" className="hover:text-blue-400 transition-colors text-sm md:text-base cursor-pointer">
+                  Segurança &amp; Tecnologia
+                </a>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <a href="/dicas-seguranca">
+                  <DropdownMenuItem>Dicas</DropdownMenuItem>
+                </a>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </nav>
