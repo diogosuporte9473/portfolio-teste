@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Shield, AlertCircle, Cloud, Brain, Users, CheckCircle2, Zap, Lock, Bell, Database } from "lucide-react";
+import { ArrowLeft, Shield, AlertCircle, Cloud, Brain, Users, CheckCircle2, Zap, Lock, Bell, Database, Mail, MessageCircle } from "lucide-react";
 
 export default function SegurancaTecnologia() {
   const publicoAlvo = [
@@ -606,27 +606,22 @@ export default function SegurancaTecnologia() {
         </section>
 
         <section className="mb-16">
-          <div className="flex items-center gap-2 mb-4">
-            <AlertCircle className="text-cyan-400" size={22} />
-            <h3 className="text-2xl font-bold">Automação e atualização contínua</h3>
+          <h2 className="heading-section text-center mb-6">Vamos Conversar?</h2>
+          <p className="lead text-slate-300 text-center max-w-2xl mx-auto mb-8">
+            Estou sempre aberto a novas oportunidades, projetos desafiadores e colaborações. Sinta-se livre para entrar em contato!
+          </p>
+          <div className="flex flex-col md:flex-row gap-6 justify-center items-center flex-wrap">
+            <a href="mailto:diogo@dmssecurity.com.br" className="inline-block">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg">
+                <Mail className="mr-2" /> diogo@dmssecurity.com.br
+              </Button>
+            </a>
+            <a href="https://wa.me/5511998178532" target="_blank" rel="noopener noreferrer" className="inline-block">
+              <Button variant="outline" className="border-blue-500 text-blue-400 hover:bg-blue-500/10 px-6 py-3 rounded-lg">
+                <MessageCircle className="mr-2" /> (11) 99817-8532
+              </Button>
+            </a>
           </div>
-          <Card className="bg-slate-900/60 border-slate-700 p-6">
-            <ul className="text-slate-300 space-y-2">
-              {automacao.map((a, i) => (
-                <li key={i} className="flex items-start gap-2">
-                  <Bell size={16} className="text-cyan-400 mt-1" />
-                  <span>{a}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-6">
-              <a href="mailto:diogo@dmssecurity.com.br">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg">
-                  Receber boletins e alertas
-                </Button>
-              </a>
-            </div>
-          </Card>
         </section>
       </main>
     </div>
