@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, Linkedin, Shield, Award, Briefcase, Lock, Server, BarChart3, MessageCircle } from "lucide-react";
+import { Mail, Linkedin, Shield, Award, Briefcase, Lock, Server, BarChart3, MessageCircle, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import {
   DropdownMenu,
@@ -91,34 +91,36 @@ export default function Home() {
             DMS Security
           </div>
           <div className="flex items-center gap-4 md:gap-8 flex-wrap justify-end max-w-full overflow-x-auto">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <a href="#sobre" className="hover:text-blue-400 transition-colors text-sm md:text-base cursor-pointer">
-                  Sobre
-                </a>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <a href="#experiencia">
-                  <DropdownMenuItem>Experiência</DropdownMenuItem>
-                </a>
-                <a href="#certificacoes">
-                  <DropdownMenuItem>Formação</DropdownMenuItem>
-                </a>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <div className="flex items-center gap-1">
+              <a href="#sobre" className="hover:text-blue-400 transition-colors text-sm md:text-base">Sobre</a>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="text-muted-foreground hover:text-blue-400 transition-colors">
+                  <ChevronDown className="w-4 h-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <a href="#experiencia">
+                    <DropdownMenuItem>Experiência</DropdownMenuItem>
+                  </a>
+                  <a href="#certificacoes">
+                    <DropdownMenuItem>Formação</DropdownMenuItem>
+                  </a>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
 
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <a href="/seguranca-tecnologia" className="hover:text-blue-400 transition-colors text-sm md:text-base cursor-pointer">
-                  Segurança &amp; Tecnologia
-                </a>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <a href="/dicas-seguranca">
-                  <DropdownMenuItem>Dicas</DropdownMenuItem>
-                </a>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <div className="flex items-center gap-1">
+              <a href="/seguranca-tecnologia" className="hover:text-blue-400 transition-colors text-sm md:text-base">Segurança &amp; Tecnologia</a>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="text-muted-foreground hover:text-blue-400 transition-colors">
+                  <ChevronDown className="w-4 h-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <a href="/dicas-seguranca">
+                    <DropdownMenuItem>Dicas</DropdownMenuItem>
+                  </a>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
           </div>
         </div>
       </nav>
