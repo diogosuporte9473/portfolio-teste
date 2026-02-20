@@ -5,6 +5,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import Inicio from "./pages/Inicio";
 import SecurityTips from "./pages/SecurityTips";
 import SocialMediaSecurity from "./pages/SocialMediaSecurity";
 import SegurancaTecnologia from "./pages/SegurancaTecnologia";
@@ -13,7 +14,8 @@ import SegurancaTecnologia from "./pages/SegurancaTecnologia";
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
+      <Route path={"/"} component={Inicio} />
+      <Route path={"/sobre"} component={Home} />
       <Route path={"/dicas-seguranca"} component={SecurityTips} />
       <Route path={"/dicas-redes-sociais"} component={SocialMediaSecurity} />
       <Route path={"/seguranca-tecnologia"} component={SegurancaTecnologia} />

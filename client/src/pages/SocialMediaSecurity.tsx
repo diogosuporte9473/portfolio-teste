@@ -1,5 +1,5 @@
-import { ArrowLeft, Lock, AlertTriangle, Eye, User, MessageSquare, Shield, Smartphone, CheckCircle2 } from "lucide-react";
-import { Link } from "wouter";
+import { Lock, AlertTriangle, Eye, User, Shield, Smartphone, CheckCircle2 } from "lucide-react";
+import SiteHeader from "@/components/SiteHeader";
 
 export default function SocialMediaSecurity() {
   const tips = [
@@ -15,6 +15,10 @@ export default function SocialMediaSecurity() {
         "Não use a mesma senha em todas as redes",
         "Ative a verificação em duas etapas (2FA) quando possível",
       ],
+      refs: [
+        { label: "NIST SP 800-63B (Autenticação)", url: "https://pages.nist.gov/800-63-3/sp800-63b.html" },
+        { label: "FIDO Alliance – Passkeys", url: "https://fidoalliance.org/passkeys/" }
+      ],
     },
     {
       id: 2,
@@ -27,6 +31,10 @@ export default function SocialMediaSecurity() {
         "Evite clicar em links estranhos",
         "Desconfie de promessas de prêmios ou dinheiro fácil",
         "Confirme pedidos sensíveis por outros canais",
+      ],
+      refs: [
+        { label: "CISA – Evitando Phishing", url: "https://www.cisa.gov/news-events/news/avoiding-social-engineering-and-phishing-attacks" },
+        { label: "CERT.br – Phishing", url: "https://cartilha.cert.br/phishing/" }
       ],
     },
     {
@@ -41,6 +49,10 @@ export default function SocialMediaSecurity() {
         "Controle quem pode encontrá-lo pelo número de telefone",
         "Deixe seu perfil visível apenas para amigos, se possível",
       ],
+      refs: [
+        { label: "Facebook – Verificação de Privacidade", url: "https://www.facebook.com/help/443357099140264" },
+        { label: "Instagram – Configurações de Privacidade", url: "https://help.instagram.com/196883487377501" }
+      ],
     },
     {
       id: 4,
@@ -53,6 +65,10 @@ export default function SocialMediaSecurity() {
         "Não compartilhe documentos",
         "Cuidado com fotos de cartões de embarque ou documentos",
         "Nunca divulgue informações financeiras",
+      ],
+      refs: [
+        { label: "CERT.br – Redes Sociais", url: "https://cartilha.cert.br/redes-sociais/" },
+        { label: "SaferNet Brasil – Dicas de Segurança", url: "https://www.safernet.org.br/" }
       ],
     },
     {
@@ -67,6 +83,10 @@ export default function SocialMediaSecurity() {
         "Pedidos de dinheiro ou ajuda financeira",
         "Em caso de dúvida, bloqueie e denuncie",
       ],
+      refs: [
+        { label: "Facebook – Impersonation", url: "https://www.facebook.com/help/159096464162185" },
+        { label: "Instagram – Denunciar Falsa Identidade", url: "https://help.instagram.com/285881641526716" }
+      ],
     },
     {
       id: 6,
@@ -79,6 +99,10 @@ export default function SocialMediaSecurity() {
         "Promoções falsas",
         "Clonagem de conta",
         "Golpe do 'pedido de ajuda' via mensagem - sempre confirme por ligação",
+      ],
+      refs: [
+        { label: "CERT.br – Golpes na Internet", url: "https://cartilha.cert.br/golpes/" },
+        { label: "FTC – Scams", url: "https://consumer.ftc.gov/scams" }
       ],
     },
     {
@@ -93,6 +117,10 @@ export default function SocialMediaSecurity() {
         "Revise permissões solicitadas pelos aplicativos",
         "Desinstale aplicativos que não usa mais",
       ],
+      refs: [
+        { label: "Google Play – Proteção", url: "https://support.google.com/googleplay/answer/2812853" },
+        { label: "Apple – Atualizações do iOS", url: "https://support.apple.com/pt-br/HT204204" }
+      ],
     },
     {
       id: 8,
@@ -106,24 +134,17 @@ export default function SocialMediaSecurity() {
         "Use a opção 'Conta invadida' na própria rede social",
         "Verifique e-mails sobre alterações na conta",
       ],
+      refs: [
+        { label: "Facebook – Conta Invadida", url: "https://www.facebook.com/hacked" },
+        { label: "Instagram – Conta Invadida", url: "https://help.instagram.com/149494825257596" },
+        { label: "WhatsApp – Conta Comprometida", url: "https://faq.whatsapp.com/729217830495155/?locale=pt_BR" }
+      ],
     },
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
-      {/* Header */}
-      <header className="sticky top-0 z-40 bg-slate-900/95 backdrop-blur border-b border-slate-700">
-        <div className="container flex items-center justify-between h-16">
-          <Link href="/">
-            <a className="flex items-center gap-2 text-slate-300 hover:text-blue-400 transition-colors">
-              <ArrowLeft size={20} />
-              <span>Voltar</span>
-            </a>
-          </Link>
-          <h1 className="text-xl font-bold text-white">DMS Security</h1>
-          <div className="w-20" />
-        </div>
-      </header>
+      <SiteHeader />
 
       {/* Main Content */}
       <main className="container py-8 sm:py-12">
@@ -164,6 +185,24 @@ export default function SocialMediaSecurity() {
                     </li>
                   ))}
                 </ul>
+                {Array.isArray((tip as any).refs) && (tip as any).refs.length > 0 && (
+                  <div className="mt-4">
+                    <div className="text-slate-400 text-xs font-semibold mb-2">Referências</div>
+                    <div className="flex flex-wrap gap-3">
+                      {(tip as any).refs.map((r: { label: string; url: string }, i: number) => (
+                        <a
+                          key={i}
+                          href={r.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-400 hover:text-blue-300 underline underline-offset-4 text-xs"
+                        >
+                          {r.label}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             );
           })}

@@ -1,5 +1,5 @@
-import { ArrowLeft, AlertCircle, CheckCircle2, Shield, Users, Cloud, Smartphone, Lock, Zap, Brain } from "lucide-react";
-import { Link } from "wouter";
+import { AlertCircle, CheckCircle2, Shield, Users, Cloud, Smartphone, Lock, Zap, Brain } from "lucide-react";
+import SiteHeader from "@/components/SiteHeader";
 
 export default function SecurityTips() {
   const tips = [
@@ -151,19 +151,7 @@ export default function SecurityTips() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
-      {/* Header */}
-      <header className="sticky top-0 z-40 bg-slate-900/95 backdrop-blur border-b border-slate-700">
-        <div className="container flex items-center justify-between h-16">
-          <Link href="/">
-            <a className="flex items-center gap-2 text-slate-300 hover:text-blue-400 transition-colors">
-              <ArrowLeft size={20} />
-              <span>Voltar</span>
-            </a>
-          </Link>
-          <h1 className="text-xl font-bold text-white">DMS Security</h1>
-          <div className="w-20" />
-        </div>
-      </header>
+      <SiteHeader />
 
       {/* Main Content */}
       <main className="container py-8 sm:py-12">

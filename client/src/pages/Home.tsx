@@ -8,6 +8,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
+import SiteHeader from "@/components/SiteHeader";
 
 /**
  * Tech Forward Design - Dark theme with cyan and purple accents
@@ -84,28 +85,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
-        <div className="container max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-blue-400">
-            DMS Security
-          </div>
-          <div className="flex items-center gap-6 md:gap-8 flex-wrap justify-end max-w-full overflow-x-auto">
-            <a href="/seguranca-tecnologia" className="hover:text-blue-400 transition-colors text-sm md:text-base">
-              Segurança da Informação
-            </a>
-            <a href="/dicas-seguranca" className="hover:text-blue-400 transition-colors text-sm md:text-base">
-              Dicas Essenciais
-            </a>
-            <a href="/dicas-redes-sociais" className="hover:text-blue-400 transition-colors text-sm md:text-base">
-              Segurança em Redes Sociais
-            </a>
-          </div>
-        </div>
-      </nav>
+      <SiteHeader />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative pt-24 pb-20 overflow-hidden">
         <div 
           className="absolute inset-0 opacity-40"
           style={{

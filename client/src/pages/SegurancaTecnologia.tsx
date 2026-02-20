@@ -1,7 +1,7 @@
-import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Shield, AlertCircle, Cloud, Brain, Users, CheckCircle2, Zap, Lock, Bell, Database, Mail, MessageCircle } from "lucide-react";
+import { Shield, AlertCircle, Cloud, Brain, Users, CheckCircle2, Zap, Lock, Bell, Database, Mail, MessageCircle } from "lucide-react";
+import SiteHeader from "@/components/SiteHeader";
 
 export default function SegurancaTecnologia() {
   const publicoAlvo = [
@@ -329,18 +329,7 @@ export default function SegurancaTecnologia() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-foreground">
-      <header className="sticky top-0 z-40 bg-slate-900/95 backdrop-blur border-b border-slate-800">
-        <div className="container flex items-center justify-between h-16">
-          <Link href="/">
-            <a className="flex items-center gap-2 text-slate-300 hover:text-blue-400 transition-colors">
-              <ArrowLeft size={20} />
-              <span>Voltar</span>
-            </a>
-          </Link>
-          <h1 className="text-lg font-bold text-white">Segurança & Tecnologia</h1>
-          <div className="w-20" />
-        </div>
-      </header>
+      <SiteHeader />
 
       <main className="container py-8 sm:py-12">
         <section className="mb-12">
