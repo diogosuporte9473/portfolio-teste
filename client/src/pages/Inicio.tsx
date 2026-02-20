@@ -12,7 +12,7 @@ export default function Inicio() {
           <div className="absolute inset-0">
             <iframe
               src="https://player.vimeo.com/video/1166795283?autoplay=1&muted=1&loop=1&autopause=0&controls=0&title=0&byline=0&portrait=0&playsinline=1&dnt=1"
-              className="absolute inset-0 w-full h-full [filter:blur(10px)] scale-110"
+              className="absolute inset-0 w-full h-full [filter:blur(6px)] scale-110"
               allow="autoplay; fullscreen; picture-in-picture"
               loading="lazy"
               title="Background Video"
