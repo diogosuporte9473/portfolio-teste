@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, Linkedin, Shield, Award, Briefcase, Lock, Server, BarChart3, MessageCircle, ChevronDown } from "lucide-react";
+import { Mail, Linkedin, Shield, Award, Lock, Server, BarChart3, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import {
   DropdownMenu,
@@ -17,23 +17,6 @@ import SiteHeader from "@/components/SiteHeader";
  */
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("experience");
-
-  const experiences = [
-    {
-      title: "Analista de Segurança da Informação",
-      company: "MANC Promocional e Soluções Criativas LTDA",
-      location: "São Bernardo",
-      period: "Junho 2024 - Atual",
-      description: [
-        "Liderança em segurança da informação e gestão de infraestrutura de TI",
-        "Administração de ambientes Microsoft 365 e Azure para 30+ usuários",
-        "Gerenciamento de Firewall Sophos",
-        "Implementação de políticas de conformidade LGPD e OWASP",
-        "Gestão de Data Loss Prevention (DLP) e proteção de dados corporativos"
-      ]
-    }
-  ];
 
   const formations = [
     {
@@ -115,11 +98,6 @@ export default function Home() {
                     <Mail className="mr-2" /> E-mail
                   </Button>
                 </a>
-                <a href="https://wa.me/5511998178532" target="_blank" rel="noopener noreferrer" className="inline-block">
-                  <Button variant="outline" className="border-blue-500 text-blue-400 hover:bg-blue-500/10 px-5 py-4 text-base sm:px-8 sm:py-6 sm:text-lg rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50">
-                    <MessageCircle className="mr-2" /> WhatsApp
-                  </Button>
-                </a>
               </div>
             </div>
             <div className="relative">
@@ -160,34 +138,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Experience Section */}
-      <section id="experiencia" className="py-20 border-t border-border bg-background/50">
-        <div className="container max-w-6xl mx-auto px-4">
-          <h2 className="heading-section mb-8 md:mb-12 text-center">Experiência Profissional</h2>
-          <div className="space-y-6">
-            {experiences.map((exp, idx) => (
-              <Card key={idx} className="bg-card border-border p-8 hover:border-blue-500 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10">
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 className="text-2xl font-bold text-blue-400">{exp.title}</h3>
-                    <p className="text-lg text-blue-300 font-semibold">{exp.company}</p>
-                    <p className="text-sm text-muted-foreground">{exp.location} • {exp.period}</p>
-                  </div>
-                  <Briefcase className="w-8 h-8 text-blue-400" />
-                </div>
-                <ul className="space-y-2 text-foreground/80">
-                  {exp.description.map((desc, i) => (
-                    <li key={i} className="flex gap-3">
-                      <span className="text-blue-400 mt-1">▸</span>
-                      <span>{desc}</span>
-                    </li>
-                  ))}
-                </ul>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Certifications Section */}
       <section id="certificacoes" className="py-20 border-t border-border">
@@ -254,11 +205,6 @@ export default function Home() {
             <a href="mailto:diogo@dmssecurity.com.br" className="inline-block">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-4 text-base sm:px-8 sm:py-6 sm:text-lg rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-600/50">
                 <Mail className="mr-2" /> diogo@dmssecurity.com.br
-              </Button>
-            </a>
-            <a href="https://wa.me/5511998178532" target="_blank" rel="noopener noreferrer" className="inline-block">
-              <Button variant="outline" className="border-blue-500 text-blue-400 hover:bg-blue-500/10 px-5 py-4 text-base sm:px-8 sm:py-6 sm:text-lg rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50">
-                <MessageCircle className="mr-2" /> (11) 99817-8532
               </Button>
             </a>
           </div>

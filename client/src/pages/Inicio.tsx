@@ -6,7 +6,20 @@ export default function Inicio() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
-      <section className="relative pt-24 pb-20">
+      <section className="relative pt-24 pb-20 overflow-hidden">
+        {/* Background video (blurred) */}
+        <div className="absolute inset-0 -z-10 pointer-events-none">
+          <div className="absolute inset-0">
+            <iframe
+              src="https://player.vimeo.com/video/1166795283?autoplay=1&muted=1&loop=1&background=1&byline=0&title=0&playsinline=1&dnt=1"
+              className="absolute inset-0 w-full h-full [filter:blur(10px)] scale-110"
+              allow="autoplay; fullscreen; picture-in-picture"
+              loading="lazy"
+              title="Background Video"
+            />
+          </div>
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
         <div className="container max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="space-y-6">

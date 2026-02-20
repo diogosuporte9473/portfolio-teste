@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Shield, AlertCircle, Cloud, Brain, Users, CheckCircle2, Zap, Lock, Bell, Database, Mail, MessageCircle } from "lucide-react";
+import { Shield, AlertCircle, Cloud, Brain, Users, CheckCircle2, Zap, Lock, Bell, Database, Mail } from "lucide-react";
 import SiteHeader from "@/components/SiteHeader";
 
 export default function SegurancaTecnologia() {
@@ -574,11 +574,6 @@ export default function SegurancaTecnologia() {
             <a href="mailto:diogo@dmssecurity.com.br" className="inline-block">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg">
                 <Mail className="mr-2" /> diogo@dmssecurity.com.br
-              </Button>
-            </a>
-            <a href="https://wa.me/5511998178532" target="_blank" rel="noopener noreferrer" className="inline-block">
-              <Button variant="outline" className="border-blue-500 text-blue-400 hover:bg-blue-500/10 px-6 py-3 rounded-lg">
-                <MessageCircle className="mr-2" /> (11) 99817-8532
               </Button>
             </a>
           </div>
