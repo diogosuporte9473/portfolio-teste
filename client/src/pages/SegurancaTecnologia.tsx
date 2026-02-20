@@ -576,36 +576,7 @@ export default function SegurancaTecnologia() {
           </Card>
         </section>
 
-        <section className="mb-12">
-          <div className="flex items-center gap-2 mb-4">
-            <Shield className="text-blue-400" size={22} />
-            <h3 className="text-2xl font-bold">SEO e estrutura</h3>
-          </div>
-          <Card className="bg-slate-900/60 border-slate-700 p-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-bold text-blue-400 mb-2">Palavras-chave</h4>
-                <p className="text-slate-300">{seo.palavras.join(", ")}</p>
-              </div>
-              <div>
-                <h4 className="font-bold text-blue-400 mb-2">Meta descrição</h4>
-                <p className="text-slate-300">{seo.descricao}</p>
-              </div>
-              <div>
-                <h4 className="font-bold text-blue-400 mb-2">Tags recomendadas</h4>
-                <p className="text-slate-300">{seo.tags.join(", ")}</p>
-              </div>
-              <div>
-                <h4 className="font-bold text-blue-400 mb-2">Categorias e menu</h4>
-                <p className="text-slate-300">
-                  Notícias, Educação, Tendências, Ferramentas, Alertas, Referências, Automação.
-                </p>
-              </div>
-            </div>
-          </Card>
-        </section>
-
-        <section className="mb-16">
+             <section className="mb-16">
           <h2 className="heading-section text-center mb-6">Vamos Conversar?</h2>
           <p className="lead text-slate-300 text-center max-w-2xl mx-auto mb-8">
             Estou sempre aberto a novas oportunidades, projetos desafiadores e colaborações. Sinta-se livre para entrar em contato!

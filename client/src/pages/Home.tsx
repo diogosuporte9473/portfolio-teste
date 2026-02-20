@@ -90,37 +90,16 @@ export default function Home() {
           <div className="text-2xl font-bold text-blue-400">
             DMS Security
           </div>
-          <div className="flex items-center gap-4 md:gap-8 flex-wrap justify-end max-w-full overflow-x-auto">
-            <div className="flex items-center gap-1">
-              <a href="#sobre" className="hover:text-blue-400 transition-colors text-sm md:text-base">Sobre</a>
-              <DropdownMenu>
-                <DropdownMenuTrigger className="text-muted-foreground hover:text-blue-400 transition-colors">
-                  <ChevronDown className="w-4 h-4" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  <a href="#experiencia">
-                    <DropdownMenuItem>Experiência</DropdownMenuItem>
-                  </a>
-                  <a href="#certificacoes">
-                    <DropdownMenuItem>Formação</DropdownMenuItem>
-                  </a>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </div>
-
-            <div className="flex items-center gap-1">
-              <a href="/seguranca-tecnologia" className="hover:text-blue-400 transition-colors text-sm md:text-base">Segurança &amp; Tecnologia</a>
-              <DropdownMenu>
-                <DropdownMenuTrigger className="text-muted-foreground hover:text-blue-400 transition-colors">
-                  <ChevronDown className="w-4 h-4" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  <a href="/dicas-seguranca">
-                    <DropdownMenuItem>Dicas</DropdownMenuItem>
-                  </a>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </div>
+          <div className="flex items-center gap-6 md:gap-8 flex-wrap justify-end max-w-full overflow-x-auto">
+            <a href="/seguranca-tecnologia" className="hover:text-blue-400 transition-colors text-sm md:text-base">
+              Segurança da Informação
+            </a>
+            <a href="/dicas-seguranca" className="hover:text-blue-400 transition-colors text-sm md:text-base">
+              Dicas Essenciais
+            </a>
+            <a href="/dicas-redes-sociais" className="hover:text-blue-400 transition-colors text-sm md:text-base">
+              Segurança em Redes Sociais
+            </a>
           </div>
         </div>
       </nav>
@@ -160,9 +139,19 @@ export default function Home() {
                 </a>
               </div>
             </div>
-
+            <div className="relative">
+           <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/40 shadow-xl">
+            <iframe
+            src="https://player.vimeo.com/video/1166670189?autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0&playsinline=1&dnt=1&controls=0"
+             allow="autoplay; fullscreen; picture-in-picture"
+             allowFullScreen
+             title="Apresentação DMS"
+                className="absolute inset-0 w-full h-full"
+              />
+          </div>
           </div>
         </div>
+       </div>
       </section>
 
       {/* About Section */}
