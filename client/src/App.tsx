@@ -9,6 +9,7 @@ import Inicio from "./pages/Inicio";
 import SecurityTips from "./pages/SecurityTips";
 import SocialMediaSecurity from "./pages/SocialMediaSecurity";
 import SegurancaTecnologia from "./pages/SegurancaTecnologia";
+import PaisFilhos from "./pages/PaisFilhos";
 
 
 function Router() {
@@ -19,6 +20,7 @@ function Router() {
       <Route path={"/dicas-seguranca"} component={SecurityTips} />
       <Route path={"/dicas-redes-sociais"} component={SocialMediaSecurity} />
       <Route path={"/seguranca-tecnologia"} component={SegurancaTecnologia} />
+      <Route path={"/pais-e-filhos"} component={PaisFilhos} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

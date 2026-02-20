@@ -53,6 +53,13 @@ export default function Inicio() {
                   </div>
                   <p className="text-sm text-muted-foreground mt-2">Tendências e referências técnicas</p>
                 </a>
+                <a href="/pais-e-filhos" className="group rounded-lg border border-border p-4 hover:border-blue-500 transition-colors">
+                  <div className="flex items-center justify-between">
+                    <div className="font-semibold">Para Pais e Filhos</div>
+                    <ArrowRight className="transition-transform group-hover:translate-x-1" />
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-2">Guia prático para famílias</p>
+                </a>
                 <a href="/sobre" className="group rounded-lg border border-border p-4 hover:border-blue-500 transition-colors">
                   <div className="flex items-center justify-between">
                     <div className="font-semibold">Sobre</div>
